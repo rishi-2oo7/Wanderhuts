@@ -1,0 +1,33 @@
+.skeleton-card { display: flex; flex-direction: column; gap: 12px; }
+
+.skeleton-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.skeleton-info { padding: 0 2px; display: flex; flex-direction: column; gap: 0; }
+
+.skeleton-row { display: flex; justify-content: space-between; align-items: center; }
+
+.skeleton-text {
+  height: 14px;
+  border-radius: 8px;
+  display: block;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e6e6e6 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

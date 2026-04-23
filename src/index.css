@@ -1,0 +1,48 @@
+/* ===== GLOBAL STYLES — WanderHuts ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --primary: #FF385C;
+  --primary-dark: #E00B41;
+  --primary-light: #ff8a50;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-500: #6b7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: var(--gray-900);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
+
+img { display: block; max-width: 100%; }
+
+button { font-family: inherit; }
+
+a { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+/* Selection */
+::selection { background: rgba(255, 56, 92, 0.2); }
